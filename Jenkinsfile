@@ -27,13 +27,12 @@ pipeline{
                     {
                     sh "${tool("SonarQube")}/bin/sonar-scanner"    
                     //sh "${scannerHome}/bin/sonar-scanner"
-                    sonar.projectKey=sonar-check1
-                    sonar.login=admin
-                    sonar.password=admin
-                    sonar.projectName=sonar-check1
-                    sonar.sources=/var/lib/jenkins/workspace/sonar-check1
-                    sonar.host.url='http://3.15.42.58:9000/'
-
+                    sonar-scanner \
+                    -Dsonar.projectKey=ne \
+                    -Dsonar.sources=. \
+                    -Dsonar.host.url=http://18.191.61.226:9000 \
+                    -Dsonar.login=114ddca4651636956f3ce8390f39d9bb4635be4f
+                    
                      
 			    	}
 			      }   
