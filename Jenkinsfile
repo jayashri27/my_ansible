@@ -29,7 +29,7 @@ pipeline{
                     //sh "${scannerHome}/bin/sonar-scanner"
                      sonar-scanner 
                     -Dsonar.projectKey="ne"
-                    -Dsonar.sources=/var/lib/jenkins/workspace/new
+                    -Dsonar.sources=
                     -Dsonar.host.url="http://18.191.61.226:9000"
                     -Dsonar.login=114ddca4651636956f3ce8390f39d9bb4635be4f
                     
